@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Oval&display=swap');
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -5,6 +8,7 @@
 }
 
 body {
+    font-family: 'Nova Oval', cursive;
     background-color: beige;
     display: flex;
     align-items: center;
@@ -33,10 +37,23 @@ body {
     height: fit-content;
 }
 
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    color: #c83193f3;
+}
+
 h1 {
     font-size: 4rem;
     color:#931b69;
     height:fit-content
+}
+
+h2 {
+    font-size: 2rem;
+    color: #edbf91;
 }
 
 .image-band {
@@ -46,13 +63,12 @@ h1 {
     padding-top: 30px;
     padding-left: 70px;
     padding-right: 70px;
-    background-color: red; 
 }
 
 p {
     color: #edbf91;
     line-height: 3rem;
     font-size: 1.3rem;
-    text-align: justify;
+    text-align: center;
     word-wrap: normal;
 }
