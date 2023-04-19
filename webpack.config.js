@@ -5,9 +5,6 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    home: './src/home.js',
-    menu: './src/menu.js',
-    contact: './src/contact.js',
   },
 
   plugins: [
@@ -21,8 +18,9 @@ module.exports = {
   ],
 
   output: {
-    filename: '[name].bundle.js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
 
   module: {
