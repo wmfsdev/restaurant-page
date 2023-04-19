@@ -30,26 +30,40 @@ function menu() {
     flexContainer.appendChild(menu)
 }
 
-const copy = "Looking for authentic Thai cuisine that will satisfy your cravings? Look no further than our Thai restaurant! Our menu features a wide variety of traditional Thai dishes prepared with the freshest ingredients. Try our famous Pad Thai or Tom Yum soup for a taste of Thailand. We also offer delicious curries like Green Curry and Massaman Curry, as well as refreshing salads like Papaya Salad. And don't forget to indulge in our Mango Sticky Rice dessert. Our cozy dining area with traditional Thai artwork and decor provides the perfect setting for a memorable dining experience. Come visit us today and satisfy your cravings with our delicious Thai dishes!"
+const copyOne = "Looking for authentic Thai cuisine that will satisfy your cravings? Look no further than our Thai restaurant! Our menu features a wide variety of traditional Thai dishes prepared with the freshest ingredients." 
+const copyTwo = "Try our famous Pad Thai or Tom Yum soup for a taste of Thailand. We also offer delicious curries like Green Curry and Massaman Curry, as well as refreshing salads like Papaya Salad. And don't forget to indulge in our Mango Sticky Rice dessert."
+const copyThree = "Our cozy dining area with traditional Thai artwork and decor provides the perfect setting for a memorable dining experience. Come visit us today and satisfy your cravings with our delicious Thai dishes!"
 
 function aboutUs() {
     const about = document.createElement('p')
+    const aboutTwo = document.createElement('p')
+    const aboutThree = document.createElement('p') 
     const image = document.createElement('img')
     const imageBand = document.createElement('div')
     const imgBand = document.createElement('img')
-    about.textContent = copy
+    about.textContent = copyOne
+    aboutTwo.textContent = copyTwo
+    aboutThree.textContent = copyThree
     imageBand.classList.add('image-band')
     imageBand.appendChild(about)
+    imageBand.appendChild(aboutTwo)
+    imageBand.appendChild(aboutThree)
     container.appendChild(image)
     container.appendChild(imageBand)
     imageBand.appendChild(imgBand)
 }
 
 function aboutUsRevisit() {
-    const menuDisplay = document.querySelector('.image-band')
-    const menu = document.createElement('p')
-    menu.textContent = copy
-    menuDisplay.appendChild(menu)
+    const aboutDisplay = document.querySelector('.image-band')
+    const aboutOne = document.createElement('p')
+    const aboutTwo = document.createElement('p')
+    const aboutThree = document.createElement('p') 
+    aboutOne.textContent = copyOne
+    aboutTwo.textContent = copyTwo
+    aboutThree.textContent = copyThree
+    aboutDisplay.appendChild(aboutOne)
+    aboutDisplay.appendChild(aboutTwo)
+    aboutDisplay.appendChild(aboutThree)
 }
 
 function home() {
